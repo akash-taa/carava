@@ -31,41 +31,8 @@ class MainDashboard extends React.Component {
   render() {
    
     return (
-      <Layout style={{ minHeight: '100vh' }}>
+     
 
-      <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-        <div className="logo" />
-        
-
-       <div >{React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-            className: 'trigger',
-            onClick: this.toggle,
-          })}
-          
-          </div> 
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-          <Menu.Item key="1" icon={<HomeFilled />}>
-            nav 1
-          </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-            nav 2
-          </Menu.Item>
-          <Menu.Item key="3" icon={<UploadOutlined />}>
-            nav 3
-          </Menu.Item>
-        </Menu>
-      </Sider>
-      <Layout className="site-layout">
-        <Header className="carava-header" style={{ padding: 0 }}>
-        <div className="nav-left">
-          <img src={require('../assets/images/logo.png').default} />
-        </div>
-        <div className="nav-right">
-         <Search placeholder="input search text" style={{ width: 200 }} />
-         <NavNotification/>
-         <NavProfile />
-         </div>
-        </Header>
         <Content
           className="site-layout-background"
           style={{
@@ -77,8 +44,7 @@ class MainDashboard extends React.Component {
         here content
        
         </Content>
-      </Layout>
-    </Layout>
+ 
     );
   }
 }

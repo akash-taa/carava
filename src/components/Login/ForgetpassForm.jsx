@@ -25,9 +25,9 @@ class ForgetpassForm extends React.Component {
         return (
             <>
             <div className="login-left-details">
-                <img className="log-logo"
+                {/* <img className="log-logo"
                   src={require("../../assets/images/logo.png").default}
-                  />
+                  /> */}
                 <h2 className="all-form-heading">Forgot Password?</h2>
                 <p className="log-sign-form-desc">Enter your registered email below to receive<br/> password reset link.</p>
                 {/*forget password form */}

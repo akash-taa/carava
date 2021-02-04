@@ -7,7 +7,13 @@ import {
   FileOutlined,
   TeamOutlined,
   UserOutlined,
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
+  VideoCameraOutlined,
+  UploadOutlined,
+  HomeFilled
 } from '@ant-design/icons';
+
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -16,39 +22,44 @@ class Sidebar extends React.Component {
   state = {
     collapsed: false,
   };
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  };
 
   onCollapse = collapsed => {
     console.log(collapsed);
     this.setState({ collapsed });
   };
+  
 
   render() {
     const { collapsed } = this.state;
     return (
      
-        <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
+      <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
+        <div className="logo" />
+        
+
+       <div >ac{React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+            className: 'trigger',
+            onClick: this.toggle,
+          })}
           
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1" icon={<PieChartOutlined />}>
-              Option 1
-            </Menu.Item>
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
-              Option 2
-            </Menu.Item>
-            <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-              <Menu.Item key="3">Tom</Menu.Item>
-              <Menu.Item key="4">Bill</Menu.Item>
-              <Menu.Item key="5">Alex</Menu.Item>
-            </SubMenu>
-            <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-              <Menu.Item key="6">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
-            </SubMenu>
-            <Menu.Item key="9" icon={<FileOutlined />}>
-              Files
-            </Menu.Item>
-          </Menu>
-        </Sider>
+          </div> 
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+          <Menu.Item key="1" icon={<HomeFilled />}>
+            nav 11
+          </Menu.Item>
+          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+            nav 2
+          </Menu.Item>
+          <Menu.Item key="3" icon={<UploadOutlined />}>
+            nav 3
+          </Menu.Item>
+        </Menu>
+      </Sider>
     
     );
   }
