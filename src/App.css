@@ -1,0 +1,95 @@
+
+@font-face {
+  font-family: "Helvetica LT Std, Light Condensed";
+  src: url("./assets/fonts/HELVETICALTSTD-LIGHTCOND.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/HELVETICALTSTD-LIGHTCOND.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica LT Std, Condensed";
+  src: url("./assets/fonts/HELVETICALTSTD-COND.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/HELVETICALTSTD-COND.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica LT Std, Bold Condensed";
+  src: url("./assets/fonts/HELVETICALTSTD-BOLDCOND.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/HELVETICALTSTD-BOLDCOND.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica LT Std, Bold";
+  src: url("./assets/fonts/HELVETICALTSTD-BOLD.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/HELVETICALTSTD-BOLD.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+.a1{font-family: "Helvetica LT Std, Light Condensed";}
+.a2{font-family: "Helvetica LT Std, Condensed";}
+.a3{font-family: "Helvetica LT Std, Bold Condensed";}
+.a4{font-family: "Helvetica LT Std, Bold";}
+h1{
+  color: #231F20;
+  font-size: 55px;
+  line-height: 57px;
+  font-family: "Helvetica LT Std, Bold Condensed";}
+h2{
+  color: #231F20;
+  font-size: 46px;
+  line-height: 48px;
+  font-family: "Helvetica LT Std, Bold Condensed";}
+h3{
+  color: #231F20;
+  font-family: "Helvetica LT Std, Bold Condensed";}
+h4{color: #231F20;
+  font-family: "Helvetica LT Std, Bold Condensed";}
+h5{color: #231F20;
+  font-family: "Helvetica LT Std, Bold Condensed";}
+.white-font{color: white;}
+.ant-layout{background: #F4F5F8;}
+.ca-divider{
+  width: 50px;
+  height: 5px;
+  background: #fff;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.carava-header{
+  background: #fff;
+  display: flex;
+    width: 100%;
+}
+.carava-header .nav-right{display: flex;
+margin-left: auto}
+.carava-header .nav-left{display: flex}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,54 @@
+.login-right{background-image:url('../../assets/images/loginp-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+padding: 200px 100px;}
+.login-left, .login-right{position: relative;}
+.login-right-details{width: 100%;
+margin-top: 90px}
+.login-left-details{
+    width: 60%;
+    display: inline-block;
+    position: absolute;
+top:50%;left: 50%;
+transform: translate(-50%,-50%)}
+.login-left-details h2{}
+.caro-div p{font-size: 22px;
+line-height: 24px;
+color: #fff;
+font-family: "Helvetica LT Std, Light Condensed";
+margin-top: 30px}
+.caro-div h1{
+    margin-bottom: 30px;
+    color: #fff;
+}
+.caro-div{height: 310px;}
+.login-right .ant-carousel .slick-dots{ right: inherit;
+    margin-left: inherit
+}
+.login-right .ant-carousel .slick-dots li{
+    height: 10px;
+    width: 10px;
+}
+.login-right .ant-carousel .slick-dots button{
+    height: 10px;
+    border-radius: 20px
+}
+.log-logo {
+    width: 250px;
+    margin-bottom: 30px;
+}
+.log-sign-form-desc{
+    font-family: "Helvetica LT Std, Condensed";
+    font-size: 20px;
+    line-height: 22px;
+    color: #272727
+
+}
+.log-sign-form-desc a{
+    color: #2170B8
+}
+.all-form label{font-family: "Helvetica LT Std, Condensed";
+    font-size: 20px;
+    line-height: 22px;
+color: #918F8F;}
+.all-form label::before{display: none !important;}
